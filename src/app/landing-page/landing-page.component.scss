@@ -1,0 +1,13 @@
+// Most styling is done via Tailwind utility classes
+// This file contains only necessary custom styles
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal.animate-slide-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
